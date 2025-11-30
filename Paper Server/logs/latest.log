@@ -1,0 +1,95 @@
+[07:52:56] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Eclipse Adoptium Temurin-25.0.1+8) on Windows 11 10.0 (amd64)
+[07:52:56] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.10-115-main@af06383 (2025-11-21T23:42:01Z) for Minecraft 1.21.10
+[07:52:57] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:52:57] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\CaveGen.jar'...
+[07:52:57] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\CaveGen.jar' in 435ms.
+[07:52:58] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[07:52:58] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - CaveGen (1.0.0)
+[07:53:01] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[07:53:02] [ServerMain/INFO]: Loaded 1461 recipes
+[07:53:02] [ServerMain/INFO]: Loaded 1574 advancements
+[07:53:02] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[07:53:03] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 280.7ms
+[07:53:03] [Server thread/INFO]: Starting minecraft server version 1.21.10
+[07:53:03] [Server thread/INFO]: Loading properties
+[07:53:03] [Server thread/INFO]: This server is running Paper version 1.21.10-115-main@af06383 (2025-11-21T23:42:01Z) (Implementing API version 1.21.10-R0.1-SNAPSHOT)
+[07:53:03] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:53:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:53:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:53:04] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[07:53:04] [Server thread/INFO]: Default game type: SURVIVAL
+[07:53:04] [Server thread/INFO]: Generating keypair
+[07:53:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:53:04] [Server thread/INFO]: Using default channel type
+[07:53:04] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[07:53:04] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[07:53:04] [Server thread/INFO]: [CaveGen] Loading server plugin CaveGen v1.0.0
+[07:53:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:53:04] [Server thread/INFO]: Preparing level "world"
+[07:53:04] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[07:53:04] [Server thread/INFO]: Preparing spawn area: 100%
+[07:53:04] [Server thread/INFO]: Prepared spawn area in 1 ms
+[07:53:04] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[07:53:04] [Server thread/INFO]: Prepared spawn area in 1 ms
+[07:53:04] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[07:53:04] [Server thread/INFO]: Prepared spawn area in 0 ms
+[07:53:04] [Server thread/INFO]: Done preparing level "world" (0.285s)
+[07:53:04] [Server thread/INFO]: [CaveGen] Enabling CaveGen v1.0.0
+[07:53:04] [Server thread/INFO]: [CaveGen] Loading caves from model_1.0_cave_1.json
+[07:53:04] [Server thread/INFO]: [CaveGen] Loaded 3 pregenerated cave samples from 1 file(s).
+[07:53:04] [Server thread/INFO]: [CaveGen] Loaded 3 cave samples on startup.
+[07:53:04] [Server thread/INFO]: [spark] Starting background profiler...
+[07:53:04] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[07:53:04] [Server thread/INFO]: Running delayed init tasks
+[07:53:04] [Server thread/INFO]: Done (8.793s)! For help, type "help"
+[07:53:07] [User Authenticator #0/INFO]: UUID of player selbeyhan is 4d5c0a55-98d8-4ac1-a9d7-0542f43ff46f
+[07:53:08] [Server thread/INFO]: selbeyhan joined the game
+[07:53:08] [Server thread/INFO]: selbeyhan[/127.0.0.1:63752] logged in with entity id 7 at ([world]334.2626191123849, 37.0, -32.95209700354744)
+[07:53:14] [Server thread/INFO]: selbeyhan issued server command: /cavegen
+[07:53:24] [Server thread/INFO]: selbeyhan issued server command: /gamemode spectator
+[07:53:24] [Server thread/INFO]: [selbeyhan: Set own game mode to Spectator Mode]
+[07:53:31] [Server thread/INFO]: selbeyhan issued server command: /cavegen new
+[07:54:01] [Craft Scheduler Thread - 0 - CaveGen/INFO]: [CaveGen] [cavegen.exe] sample_caves.py:52: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+[07:54:01] [Craft Scheduler Thread - 0 - CaveGen/INFO]: [CaveGen] [cavegen.exe] [Sample 0] probs stats: min= 5.395557e-18 max= 0.99999976 mean= 0.18145597 shape= (1, 1, 32, 32, 32)
+[07:54:01] [Craft Scheduler Thread - 0 - CaveGen/INFO]: [CaveGen] [cavegen.exe] Sample 0 volume stats: min= 0.0 max= 1.0 mean= 0.17492676 shape= (1, 1, 32, 32, 32)
+[07:54:33] [Server thread/INFO]: selbeyhan issued server command: /cavegen new
+[07:55:01] [Craft Scheduler Thread - 4 - CaveGen/INFO]: [CaveGen] [cavegen.exe] sample_caves.py:52: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+[07:55:02] [Craft Scheduler Thread - 4 - CaveGen/INFO]: [CaveGen] [cavegen.exe] [Sample 0] probs stats: min= 2.0779799e-29 max= 0.9999994 mean= 0.19482368 shape= (1, 1, 32, 32, 32)
+[07:55:02] [Craft Scheduler Thread - 4 - CaveGen/INFO]: [CaveGen] [cavegen.exe] Sample 0 volume stats: min= 0.0 max= 1.0 mean= 0.18841553 shape= (1, 1, 32, 32, 32)
+[07:58:39] [Server thread/INFO]: Stopping the server
+[07:58:39] [Server thread/INFO]: Stopping server
+[07:58:39] [Server thread/INFO]: [CaveGen] Disabling CaveGen v1.0.0
+[07:58:39] [Server thread/INFO]: Saving players
+[07:58:39] [Server thread/INFO]: selbeyhan lost connection: Server closed
+[07:58:39] [Server thread/INFO]: selbeyhan left the game
+[07:58:40] [Server thread/INFO]: Saving worlds
+[07:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saved 968 block chunks, 221 entity chunks, 6 poi chunks in world 'world' in 0.15s
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[07:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[07:58:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[07:58:40] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[07:58:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:58:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:58:40] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:58:40] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:58:40] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[07:58:40] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[07:58:40] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[07:58:40] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

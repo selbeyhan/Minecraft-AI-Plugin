@@ -1,0 +1,23 @@
+Minecraft-Cave-Generator-AI/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+.venv/
+venv/
+
+# Datasets / large binaries
+data/
+*.pth
+*.pt
+*.pkl
+*.zip
+*.tar
+*.gz
+*.exe
+
+# IDE stuff
+.vscode/
+.idea/

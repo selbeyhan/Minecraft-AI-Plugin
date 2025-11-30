@@ -1,0 +1,19 @@
+name: CaveGen
+main: com.selman.caveplugin.CaveGenPlugin
+version: 1.0.0
+api-version: 1.20
+author: Selman
+
+commands:
+  cavegen:
+    description: Generate an AI cave or manage caves.
+    usage: /cavegen [reload|new]
+    permission: cavegen.use
+
+permissions:
+  cavegen.use:
+    description: Allows using /cavegen
+    default: op
+  cavegen.reload:
+    description: Allows reloading cave JSON files
+    default: op

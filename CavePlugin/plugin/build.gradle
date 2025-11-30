@@ -1,0 +1,36 @@
+import org.gradle.api.file.DuplicatesStrategy
+
+plugins {
+    id 'java'
+}
+
+group = 'com.selman'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'papermc-repo'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+}
+
+dependencies {
+    // Use the Paper API version matching your server (adjust if needed)
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
+
+    // Gson for JSON parsing
+    implementation 'com.google.code.gson:gson:2.11.0'
+}
+
+jar {
+    archiveBaseName.set('CaveGen')
+    archiveVersion.set(version)
+
+    // Fix duplicate module-info.class from shaded dependencies
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
